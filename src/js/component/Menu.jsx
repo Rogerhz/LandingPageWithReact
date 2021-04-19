@@ -1,19 +1,31 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export const Menu = () => {
 	return (
 		<Navbar
 			bg="dark"
 			variant="dark"
-			className="m-auto justify-content-between">
-			<Navbar.Brand>Start Boopstrap</Navbar.Brand>
-			<Nav>
-				<Nav.Link>Home</Nav.Link>
-				<Nav.Link>About</Nav.Link>
-				<Nav.Link>Servises</Nav.Link>
-				<Nav.Link>Contact</Nav.Link>
-			</Nav>
+			expand="lg"
+			className="d-flex justify-content-between w100">
+			<Navbar.Brand>React-Bootstrap</Navbar.Brand>
+			<Navbar.Toggle />
+			<Navbar.Collapse>
+				<Nav>
+					<NavDropdown.Item className="text-light">
+						Home
+					</NavDropdown.Item>
+					<NavDropdown.Item className="text-light">
+						About
+					</NavDropdown.Item>
+					<NavDropdown.Item className="text-light">
+						Services
+					</NavDropdown.Item>
+					<NavDropdown.Item className="text-light">
+						Contact
+					</NavDropdown.Item>
+				</Nav>
+			</Navbar.Collapse>
 		</Navbar>
 	);
 };

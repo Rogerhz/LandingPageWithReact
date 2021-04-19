@@ -11,8 +11,10 @@ export function Home() {
 	return (
 		<>
 			<Menu />
-			<JumbotronS />
-			<Cards />
+			<div className="container">
+				<JumbotronS />
+				<Cards />
+			</div>
 			<FooterPage />
 		</>
 	);

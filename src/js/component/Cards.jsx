@@ -1,53 +1,53 @@
 import React from "react";
-import { Card, CardGroup, Button } from "react-bootstrap";
+import { Card, Button, CardDeck } from "react-bootstrap";
 
 export const Cards = () => {
 	return (
-		<CardGroup className="container">
-			<Card style={{ Width: "18rem" }}>
+		<CardDeck>
+			<Card style={{ Width: "9rem" }}>
 				<Card.Img variant="top" src="http://placehold.it/500x325.jpg" />
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
 						{`Some quick example text to build on the card title and
-						make up the bulk of the card's content.`}
+							make up the bulk of the card's content.`}
 					</Card.Text>
 					<Button variant="primary">Go somewhere</Button>
 				</Card.Body>
 			</Card>
-			<Card style={{ width: "18rem" }}>
+			<Card style={{ width: "9rem" }}>
 				<Card.Img variant="top" src="http://placehold.it/500x325.jpg" />
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
 						{`Some quick example text to build on the card title and
-						make up the bulk of the card's content.`}
+							make up the bulk of the card's content.`}
 					</Card.Text>
 					<Button variant="primary">Go somewhere</Button>
 				</Card.Body>
 			</Card>
-			<Card style={{ width: "18rem" }}>
+			<Card style={{ width: "9rem" }}>
 				<Card.Img variant="top" src="http://placehold.it/500x325.jpg" />
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
 						{`Some quick example text to build on the card title and
-						make up the bulk of the card's content.`}
+							make up the bulk of the card's content.`}
 					</Card.Text>
 					<Button variant="primary">Go somewhere</Button>
 				</Card.Body>
 			</Card>
-			<Card style={{ width: "18rem" }}>
+			<Card style={{ width: "9rem" }}>
 				<Card.Img variant="top" src="http://placehold.it/500x325.jpg" />
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
 						{`Some quick example text to build on the card title and
-						make up the bulk of the card's content.`}
+							make up the bulk of the card's content.`}
 					</Card.Text>
 					<Button variant="primary">Go somewhere</Button>
 				</Card.Body>
 			</Card>
-		</CardGroup>
+		</CardDeck>
 	);
 };
