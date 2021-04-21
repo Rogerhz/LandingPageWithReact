@@ -3,15 +3,11 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export const Menu = () => {
 	return (
-		<Navbar
-			bg="dark"
-			variant="dark"
-			expand="lg"
-			className="d-flex justify-content-between w100">
+		<Navbar bg="dark" variant="dark" expand="lg">
 			<Navbar.Brand>React-Bootstrap</Navbar.Brand>
 			<Navbar.Toggle />
 			<Navbar.Collapse>
-				<Nav>
+				<Nav className="d-flex ml-auto">
 					<NavDropdown.Item className="text-light">
 						Home
 					</NavDropdown.Item>
